@@ -354,16 +354,6 @@
                <h2>СОЦ. СЕТЯХ</h2>
             </div>
          </div>
-         <ul class="social-link">
-         <?php 
-         $all = $pdo -> prepare("SELECT * FROM `post` ORDER BY post_id DESC LIMIT 8");
-         $all -> execute();
-         while($res = $all->fetch(PDO::FETCH_OBJ)):?>
-            <a href="<?php echo $res->post_link?>" class="social__link social-link-1" target="_blank">
-               <li><img src="img/<?php echo $res->post_img?>" alt="chislaprirody"></li>
-            </a>
-         <?php endwhile?>
-         </ul>
       </section>
       <div class="research">
          <div class="mask"></div>
